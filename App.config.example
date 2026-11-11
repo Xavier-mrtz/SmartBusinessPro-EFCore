@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionStrings>
+    <!--
+      Componentes de la cadena de conexión:
+      - Server: Nombre de la instancia de SQL Server (ej: .\SQLEXPRESS, localhost, nombre-pc\INSTANCIA)
+      - Database / Initial Catalog: Nombre de la base de datos (SmartBusinessPro)
+      - Trusted_Connection=True: Usa autenticación de Windows (recomendado en desarrollo)
+      - TrustServerCertificate=True: Útil en entornos de desarrollo con certificados autofirmados
+      - Alternativa con usuario/contraseña: User ID=sa;Password=TuPassword;
+    -->
+    <add name="SmartBusinessProConnection"
+         connectionString="Server=.\SQLEXPRESS;Database=SmartBusinessPro;Trusted_Connection=True;TrustServerCertificate=True;"
+         providerName="Microsoft.EntityFrameworkCore.SqlServer" />
+  </connectionStrings>
+
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+  </startup>
+</configuration>
